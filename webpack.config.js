@@ -6,12 +6,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'lib.js',
-    library: {
-      name: 'RA',
-      type: 'umd'
-      // export: 'default'
-    },
-    umdNamedDefine: true,
+    globalObject: 'this',
+    library: 'RA',
+    libraryTarget: 'umd',
     publicPath: '/'
   },
   optimization: {
