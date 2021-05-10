@@ -1,6 +1,6 @@
 {
   "name": "ramda-analytics",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Data analysis library for JavaScript built with Ramda.",
   "main": "dist/lib.js",
   "module": "src/index.js",
