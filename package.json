@@ -1,9 +1,9 @@
 {
   "name": "ramda-analytics",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "Data analysis library for JavaScript built with Ramda.",
-  "main": "dist/zapant-indicators.umd.js",
-  "module": "dist/zapant-indicators.es.js",
+  "main": "dist/ramda-analytics.umd.js",
+  "module": "dist/ramda-analytics.es.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
@@ -11,8 +11,8 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/zapant-indicators.es.js",
-      "require": "./dist/zapant-indicators.umd.js"
+      "import": "./dist/ramda-analytics.es.js",
+      "require": "./dist/ramda-analytics.umd.js"
     }
   },
   "author": "Alexandru Ghiura",
