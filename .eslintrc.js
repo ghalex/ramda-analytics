@@ -1,17 +1,18 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    node: true
   },
-  globals: {
-    include: 'readonly'
-  },
-  extends: ['standard'],
+  extends: 'standard-with-typescript',
+  overrides: [
+  ],
   parserOptions: {
-    ecmaVersion: 12,
-    sourceType: 'module'
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: './tsconfig.json',
+    tsconfigRootDir: __dirname
   },
   rules: {
-    'space-before-function-paren': 0
   }
 }

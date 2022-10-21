@@ -1,6 +1,11 @@
 import * as r from 'ramda'
 
-const rolling = r.curry(({ window, partial }, func, arr) => {
+interface RollingConfig {
+  window: number
+  partial: boolean
+}
+
+const rolling = <T>({ window, partial }: RollingConfig, func: (val: T[]) => any, arr: T[]): any[] => {
   const iRange = r.range(0, arr.length)
   const result = r.map((i) => {
     if (i + 1 < window) {
@@ -15,6 +20,6 @@ const rolling = r.curry(({ window, partial }, func, arr) => {
   }, iRange)
 
   return result
-})
+}
 
-export default rolling
+export default r.curry(rolling)
