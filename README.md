@@ -1,11 +1,11 @@
 ## ramda-analytics
 
-Data analysis library for javascript. ramda-analytics is a data manipulation and analysis library written in JavaScript offering the convenience of pandas or R
+Data analysis library for JavaScript built with Ramda. Ramda Analytics is a data manipulation and analysis library written in JavaScript offering the convenience of pandas or R
 
 ## Install
 
 ```
-npm install zebras --save
+npm install ramda-analytics --save
 ```
 
 
