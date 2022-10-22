@@ -19,6 +19,7 @@ console.log(withId)
 const distinctData = distinct((x: any) => x.open, AAPL)
 console.log(distinctData)
 
+distinct()
 // 4. dot path
 let res = dotPath('user.fname', obj)
 console.log(res)
